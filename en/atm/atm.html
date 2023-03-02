@@ -1,0 +1,137 @@
+<html lang="es" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Mi portafolio</title>
+    <link rel="icon" type="image/svg" href="../../images/definitivo1.svg">
+    <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <!--link rel="stylesheet" href="css/media.css" media="screen and (max-width:768px)"-->
+    <link rel="stylesheet" href="disenoatm.css">
+    <!--<style>
+      @media screen and (max-width: 768px){
+      body {
+        border: 10px solid blue;
+      }
+    }
+    </style>-->
+    <meta name="viewport" content= "width = device-width, initial-scale=1 ">
+    <!--google-->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-175640852-1"></script>
+  <script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-175640852-1');
+</script>
+  </head>
+  <body>
+    <i class="icon-menu burger-button" id="burger-menu"></i>
+    <header class="header">
+      <div class="container">
+        <a class="logo" href="../index.html">
+          <img src="../../images/test2.png" alt="logo propio largo" width="220" height="">
+        </a>
+        <nav class="menu">
+          <ol>
+            <li>
+              <a class="header-text" id="pf" href="../index.html#portafolio">Portfolio</a>
+            </li>
+            <li>
+              <a class="header-text" id="ex" href="../index.html#experiencia">Experience</a>
+            </li>
+            <li>
+              <a class="header-text" id="tj" href="#contacto">Cooperate</a>
+            </li>
+            <li class="caja-ingles" id="english" onclick="location.href='../../cajero2/atm.html'">
+              <a class="ingles" id="english" href="../../cajero2/atm.html">ES</a>
+              <a class="header-text bandera espanol" id="english" href="../../cajero2/atm.html"></a>
+            </li>
+          </ol>
+        </nav>
+      </div>
+    </header>
+    <div class="container">
+      <h1 class="atm-title">Firulanco, The most special bank in my house</h1>
+    </div>
+    <div class="container">
+      <p class="atm-description"><strong>[Javascript] How does it work? <br></strong>This is a simulation of an atm where you have 1830 dollars
+        available to withdraw, the program will perform cycles to determine which bills to deliver according to what the user requests. </ps>
+    </div>
+      <section class="principal">
+        <div class="container">
+          <div class="atm-caja">
+            <p class="atm-imageContainer">
+              <img id="atm-imagen" src="cajero.gif">
+            </p>
+            <p id="saldo" >Your balance is $ 1830 dollars</p>
+            <p class="botons">
+              <input class="botones" type="number" placeholder="Quantity" id="dinero" />
+              <input class="botones" type="button" value="Withdraw" id="extraer" />
+              <input class="botones" type="button" value="Restart ATM" onclick="location.href='atm.html'">
+            </p>
+            <div class="atm-elementos">
+              <p id="resultado"></p>
+              <div id="billetes"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    <script src="cajero.js" charset="utf-8"></script>
+
+    <section class="contact" id="contacto">
+      <div class="container">
+        <form class="form-email" action="mailto:contact@diegodeveloper.com" method="post" enctype="text/plain">
+          <h3 id="creacion">Let's work together</h3>
+
+          <input class="email" type="text" name="mail" placeholder="Email"><br>
+          <input class="caja-tx" type="text"  name="name" placeholder="Name"><br>
+          <input class="caja-tx" type="text" name="comment" placeholder="Commentary"><br>
+
+          <input class="boton" type="submit" value="Send">
+          <input class="boton" type="reset" value="Reset"><br>
+          <p class="email-dos">It doesn't work? try <a class="link-email" href="mailto:contact@diegodeveloper.com" target="_top">here</a></p>
+        </form>
+        <div class="social">
+          <a target="_blank" href="https://www.facebook.com/diegosarmientodev" class="sc-link facebook"></a>
+          <a target="_blank" href="https://www.instagram.com/diego_sarmientodev/" class="sc-link instagram"></a>
+          <a target="_blank" href="https://github.com/diegosarmientodev" class="sc-link github"></a>
+          <a target="_blank" href="https://www.linkedin.com/in/diegosarmientodev" class="sc-link linkedin"></a>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+
+      <div class="">
+        <p class="creditos">Designed with HTML and CSS by <a target="_blank" href="https://www.instagram.com/diego_sarmientodev/">@diego_sarmientodev</a></p>
+      </div>
+    </footer>
+    <script type="text/javascript">
+
+        const menu = document.querySelector('.menu');
+        const burgerButton = document.querySelector('#burger-menu');
+        const portafolio = document.querySelector('#pf');
+        const experiencia = document.querySelector('#ex');
+        const tj = document.querySelector('#tj');
+        var x = 0;
+        function active() {
+          if (x == 0) {
+            menu.classList.add('is-active');
+            x = 1;
+          }
+          else{
+            menu.classList.remove('is-active');
+            x = 0;
+          }
+        }
+
+        burgerButton.addEventListener("click",active);
+        portafolio.addEventListener("click",active);
+        experiencia.addEventListener("click",active);
+        tj.addEventListener("click",active);
+
+    </script>
+  </body>
+</html>

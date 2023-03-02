@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<!-- Hello there, I am Diego :v -->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>My Portfolio</title>
+    <link rel="icon" type="image/svg" href="../images/definitivo1.svg">
+    <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <!--link rel="stylesheet" href="css/media.css" media="screen and (max-width:768px)"-->
+    <link rel="stylesheet" href="../css/colores.css">
+    <!--<style>
+      @media screen and (max-width: 768px){
+      body {
+        border: 10px solid blue;
+      }
+    }
+    </style>-->
+    <meta name="viewport" content= "width = device-width, initial-scale=1 ">
+    <!--google-->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-175640852-1"></script>
+  <script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-175640852-1');
+</script>
+  </head>
+  <body>
+    <i class="icon-menu burger-button" id="burger-menu"></i>
+    <header class="header">
+      <div class="container">
+        <a class="logo" href="index.html">
+          <img src="../images/test2.png" alt="logo propio largo" width="220" height="">
+        </a>
+        <nav class="menu">
+          <ol>
+            <li>
+              <a class="header-text" id="pf" href="#portafolio">Portfolio</a>
+            </li>
+            <li>
+              <a class="header-text" id="ex" href="#experiencia">Experience</a>
+            </li>
+            <li>
+              <a class="header-text" id="tj" href="#contacto">Cooperate</a>
+            </li>
+            <li class="caja-ingles" id="english" onclick="location.href='../index.html'">
+              <a class="ingles" id="english" href="../index.html">ES</a>
+              <a class="header-text bandera espanol" id="english" href="../index.html"></a>
+            </li>
+          </ol>
+        </nav>
+      </div>
+    </header>
+
+    <section class="hero">
+      <div class="container">
+        <h1>Hi! I am <strong>Diego Sarmiento,</strong><strong> <br/> Frontend developer</strong> with<br/> passion for <strong>learning</strong></h1>
+        <img class="hero-image" src="../images/fotopr.jpg" alt="imagen principal del sitio">
+      </div>
+    </section>
+
+    <section class="portafolio" id="portafolio">
+      <div class="container">
+        <h2>Portfolio (Featured Projects)</h2>
+        <article class="proyecto">
+          <div class="pr-details">
+
+            <h3 class="pr-title">ATM</h3>
+            <p class="pr-date"><small><strong>Date:</strong> 7/19/2020</small></p>
+            <p id="pr-noturl">You can see it <a class="pr-url" href="atm/atm.html">here</a></p>
+            <p class="pr-description">Cycle development project using javascript to withdraw money through an ATM simulator.</p>
+            </div>
+            <figure class="pr-imageContainer">
+              <img src="../images/cajero.gif" alt="cajero" class="pr-image">
+            </figure>
+
+          </article>
+      </div>
+    </section>
+
+    <div class="container" id="experiencia">
+      <h2 class="ex-list-title">MORE ABOUT MY EXPERIENCE</h2>
+    </div>
+
+    <section class="ex-list" >
+      <div class="container">
+
+          <article class="experience">
+            <figure class="ex-imageContainer">
+              <img class="ex-image" src="../images/certificacion.jpg" alt="certificaion">
+            </figure>
+            <div class="ex-detail">
+              <h3 class="ex-title">Certificates</h3>
+              <p class="ex-description">I have experience in several areas of technology, here you can see the certifications that make me qualified</p>
+                <a class="ex-url" href="certifications.html">See all certificates</a>
+              </div>
+            </article>
+
+            <article class="experience">
+              <figure class="ex-imageContainer">
+                <img class="ex-image" id="uscom" src="../images/uscom.png" alt="logos que he hecho">
+              </figure>
+              <div class="ex-detail">
+                <h3 class="ex-title">Technician in Information Technologies</h3>
+                <p class="ex-description">I have one year experience working as a freelance for the USCOM SAS company in the technical field of networking and server configuration, do you want to know more?</p>
+                  <a class="ex-url" target="_blank" href="https://www.uscom.net.co/">Contact us</a>
+                </div>
+              </article>
+
+              <article class="experience">
+                <figure class="ex-imageContainer">
+                  <img class="ex-image" src="../images/arduino.jpg" alt="logos que he hecho">
+                </figure>
+                <div class="ex-detail">
+                  <h3 class="ex-title">Soon development on Arduino</h3>
+                  <p class="ex-description">upcoming projects in C combining hardware and software</p>
+                    <a class="ex-url" >Coming soon</a>
+                  </div>
+                </article>
+      </div>
+    </section>
+
+    <section class="contact" id="contacto">
+      <div class="container">
+
+
+        <form class="form-email" action="mailto:contact@diegodeveloper.com" method="post" enctype="text/plain">
+          <h3 id="creacion">Let's work together</h3>
+
+          <input class="email" type="text" name="mail" placeholder="Email"><br>
+          <input class="caja-tx" type="text"  name="name" placeholder="Name"><br>
+          <input class="caja-tx" type="text" name="comment" placeholder="Commentary"><br>
+
+          <input class="boton" type="submit" value="Send">
+          <input class="boton" type="reset" value="Reset"><br>
+          <p class="email-dos">It doesn't work? try <a class="link-email" href="mailto:contact@diegodeveloper.com" target="_top">here</a></p>
+        </form>
+
+        <div class="social">
+          <a target="_blank" href="https://www.facebook.com/diegosarmientodev" class="sc-link facebook"></a>
+          <a target="_blank" href="https://www.instagram.com/diego.stoic/" class="sc-link instagram"></a>
+          <a target="_blank" href="https://github.com/diegosarmientodev" class="sc-link github"></a>
+          <a target="_blank" href="https://www.linkedin.com/in/diegosarmientodev" class="sc-link linkedin"></a>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+
+      <div class="">
+        <p class="creditos">Designed with HTML and CSS by <a target="_blank" href="https://www.instagram.com/diego.stoic/">@diego.stoic</a></p>
+      </div>
+    </footer>
+    <script type="text/javascript">
+
+      // const pantalla = window.matchMedia('screen and (max-width:767px)');
+      //   pantalla.addListener(validation);
+      //    if (pantalla.matches) {
+      //      validation();
+      //    }
+
+
+        const menu = document.querySelector('.menu');
+        const burgerButton = document.querySelector('#burger-menu');
+        const portafolio = document.querySelector('#pf');
+        const experiencia = document.querySelector('#ex');
+        const tj = document.querySelector('#tj');
+        var x = 0;
+        function active() {
+          if (x == 0) {
+            menu.classList.add('is-active');
+            x = 1;
+          }
+          else{
+            menu.classList.remove('is-active');
+            x = 0;
+          }
+        }
+
+        burgerButton.addEventListener("click",active);
+        portafolio.addEventListener("click",active);
+        experiencia.addEventListener("click",active);
+        tj.addEventListener("click",active);
+
+
+
+    </script>
+  </body>
+</html>
+<!--Insertar miniatura video
+<video class="HTML-video" src="link youtube" width=" " height=" " controls autoplay poster="YOUR-IMAGE.jpg">
+</video> -->
